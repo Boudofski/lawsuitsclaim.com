@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -27,10 +28,6 @@ export default function PrivacyPolicyPage() {
           via analytics tools.
         </li>
         <li>
-          <strong>Email address:</strong> if you voluntarily subscribe to our
-          newsletter.
-        </li>
-        <li>
           <strong>Contact form data:</strong> if you contact us using our
           contact form.
         </li>
@@ -46,17 +43,13 @@ export default function PrivacyPolicyPage() {
         <li>
           To understand how readers use the site and improve our content.
         </li>
-        <li>
-          To send newsletter subscribers plain-English legal information
-          updates, if opted in.
-        </li>
         <li>To respond to contact form submissions.</li>
       </ul>
 
       <h2>Cookies and Tracking</h2>
       <p>
         We use cookies for analytics and, if ads are displayed, for advertising
-        purposes. See our <a href="/cookie-policy">Cookie Policy</a> for
+        purposes. See our <Link href="/cookie-policy">Cookie Policy</Link> for
         details. You can adjust cookie preferences in your browser settings.
       </p>
 
@@ -70,20 +63,19 @@ export default function PrivacyPolicyPage() {
       <h2>Data Retention</h2>
       <p>
         Analytics data is retained per the policies of the analytics provider.
-        Newsletter subscriber data is retained until you unsubscribe.
       </p>
 
       <h2>Your Rights</h2>
       <p>
         You may request access to, correction of, or deletion of personal data
         we hold about you by contacting us via our{" "}
-        <a href="/contact">Contact page</a>.
+        <Link href="/contact">Contact page</Link>.
       </p>
 
       <h2>Contact</h2>
       <p>
         For privacy-related questions, use our{" "}
-        <a href="/contact">Contact page</a>.
+        <Link href="/contact">Contact page</Link>.
       </p>
     </article>
   );

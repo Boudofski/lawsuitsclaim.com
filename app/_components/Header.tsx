@@ -3,7 +3,6 @@ import { Scale, Menu } from "lucide-react";
 
 const navLinks = [
   { label: "Class Actions", href: "/class-actions" },
-  { label: "Settlements", href: "/settlements" },
   { label: "Personal Injury", href: "/personal-injury" },
   { label: "Insurance Claims", href: "/insurance-claims" },
   { label: "Consumer Protection", href: "/consumer-protection" },
@@ -36,10 +35,10 @@ export default function Header() {
             ))}
           </nav>
           <Link
-            href="/resources"
+            href="/about"
             className="hidden md:inline-flex items-center px-4 py-2 bg-brand-blue text-white text-sm font-medium rounded-md hover:bg-navy-800 transition-colors"
           >
-            Resources
+            About
           </Link>
           <button
             className="md:hidden p-2 text-accent-slate"

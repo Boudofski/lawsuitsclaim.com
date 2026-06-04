@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Editorial Policy",
@@ -59,19 +60,17 @@ export default function EditorialPolicyPage() {
           We update guides when legal deadlines, settlement details, or
           applicable law changes in a material way.
         </li>
-        <li>Updated articles display a "Last updated" date.</li>
+        <li>Updated articles display a &ldquo;Last updated&rdquo; date.</li>
         <li>
           If you believe an article contains an error, please contact us via our{" "}
-          <a href="/contact">Contact page</a>. We investigate and correct
+          <Link href="/contact">Contact page</Link>. We investigate and correct
           confirmed errors promptly.
         </li>
       </ul>
 
       <h2>Advertising and Sponsored Content</h2>
       <ul>
-        <li>
-          We clearly label any sponsored or paid content, if published.
-        </li>
+        <li>We clearly label any sponsored or paid content, if published.</li>
         <li>
           Advertising does not influence editorial decisions or article content.
         </li>

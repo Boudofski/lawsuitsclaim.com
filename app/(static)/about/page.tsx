@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About LawsuitsClaim",
@@ -62,7 +63,7 @@ export default function AboutPage() {
         established legal publications. We do not publish claims we cannot
         support with a credible source. We update guides when deadlines or legal
         details change. See our{" "}
-        <a href="/editorial-policy">Editorial Policy</a> for full details.
+        <Link href="/editorial-policy">Editorial Policy</Link> for full details.
       </p>
 
       <h2>Who Writes Our Content</h2>
@@ -76,7 +77,7 @@ export default function AboutPage() {
       <h2>Contact Us</h2>
       <p>
         For corrections, feedback, or general inquiries, visit our{" "}
-        <a href="/contact">Contact page</a>.
+        <Link href="/contact">Contact page</Link>.
       </p>
     </article>
   );

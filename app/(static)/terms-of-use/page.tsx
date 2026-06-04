@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -25,7 +26,7 @@ export default function TermsOfUsePage() {
       <p>
         All content on LawsuitsClaim.com is for general informational purposes
         only. Nothing on this site constitutes legal advice. See our full{" "}
-        <a href="/legal-disclaimer">Legal Disclaimer</a>.
+        <Link href="/legal-disclaimer">Legal Disclaimer</Link>.
       </p>
 
       <h2>Prohibited Uses</h2>

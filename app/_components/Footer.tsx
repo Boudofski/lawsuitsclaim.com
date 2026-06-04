@@ -4,7 +4,6 @@ import { Scale } from "lucide-react";
 const footerLinks: Record<string, { label: string; href: string }[]> = {
   Learn: [
     { label: "Class Actions", href: "/class-actions" },
-    { label: "Settlements", href: "/settlements" },
     { label: "Personal Injury", href: "/personal-injury" },
     { label: "Insurance Claims", href: "/insurance-claims" },
     { label: "Consumer Protection", href: "/consumer-protection" },
@@ -14,7 +13,6 @@ const footerLinks: Record<string, { label: string; href: string }[]> = {
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Editorial Policy", href: "/editorial-policy" },
-    { label: "Resources", href: "/resources" },
   ],
   Legal: [
     { label: "Legal Disclaimer", href: "/legal-disclaimer" },
@@ -37,7 +35,7 @@ export default function Footer() {
               />
               <span className="font-bold text-white">LawsuitsClaim</span>
             </Link>
-            <p className="text-sm text-slate-400 leading-relaxed">
+            <p className="text-sm text-slate-300 leading-relaxed">
               Plain-English guides to lawsuits, settlements, and legal claims.
               For general information only — not legal advice.
             </p>
@@ -52,7 +50,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm hover:text-white transition-colors"
+                      className="text-sm text-slate-300 hover:text-white transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -62,14 +60,19 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="border-t border-navy-800 pt-6 flex flex-col sm:flex-row justify-between gap-3">
-          <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} LawsuitsClaim. All rights reserved.
+        <div className="border-t border-navy-800 pt-6 space-y-3">
+          <p className="text-sm text-slate-300 leading-relaxed max-w-4xl">
+            <strong className="text-white">Legal Disclaimer:</strong>{" "}
+            LawsuitsClaim.com is an independent legal information publisher. All
+            content on this site is for general informational purposes only and
+            does not constitute legal advice. We are not a law firm. We do not
+            represent clients. We do not guarantee claim eligibility, settlement
+            amounts, or case outcomes. Laws vary by state and jurisdiction. If
+            you have a legal matter, consult a licensed attorney in your
+            jurisdiction.
           </p>
-          <p className="text-xs text-slate-500 max-w-lg">
-            This website provides general legal information only and does not
-            constitute legal advice. Laws vary by state and jurisdiction. Consult
-            a licensed attorney for advice specific to your situation.
+          <p className="text-sm text-slate-400">
+            © {new Date().getFullYear()} LawsuitsClaim. All rights reserved.
           </p>
         </div>
       </div>

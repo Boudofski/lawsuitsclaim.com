@@ -6,9 +6,13 @@ import {
   Shield,
   ShoppingBag,
   AlertTriangle,
-  BookOpen,
   ExternalLink,
   ArrowRight,
+  CheckCircle,
+  BookOpen,
+  RefreshCw,
+  SearchCheck,
+  MessageSquareOff,
 } from "lucide-react";
 import type { Metadata } from "next";
 import type { LucideIcon } from "lucide-react";
@@ -68,12 +72,35 @@ const categories: CategoryEntry[] = [
     href: "/scam-check",
     Icon: AlertTriangle,
   },
+];
+
+const trustChecklist = [
+  "Verify the official settlement website",
+  "Check deadlines and eligibility rules",
+  "Never pay a fee to receive a settlement",
+  "Laws vary by jurisdiction",
+];
+
+const editorialCards = [
   {
-    title: "Legal Basics",
-    description:
-      "Plain-English explanations of legal terms, courts, and common legal processes.",
-    href: "/legal-basics",
     Icon: BookOpen,
+    title: "Plain-English Explanations",
+    text: "We break down legal claim topics into clear, practical guides without unnecessary legal jargon.",
+  },
+  {
+    Icon: SearchCheck,
+    title: "Source-Based Research",
+    text: "We prefer official sources such as court documents, settlement administrators, government agencies, and reputable legal resources.",
+  },
+  {
+    Icon: RefreshCw,
+    title: "Regular Content Updates",
+    text: "We update guides when important claim details, deadlines, settlement information, or legal processes change.",
+  },
+  {
+    Icon: MessageSquareOff,
+    title: "No Legal Advice or Compensation Promises",
+    text: "We provide general legal information only. We do not give legal advice, guarantee results, or promise settlement payments.",
   },
 ];
 
@@ -109,35 +136,68 @@ export default async function HomePage() {
 
       {/* Hero */}
       <section className="bg-white border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 text-xs font-medium text-brand-blue bg-blue-50 px-3 py-1 rounded-full mb-6">
-              <FileText className="h-3.5 w-3.5" aria-hidden="true" />
-              Independent Legal Information Publisher
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+          <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-14">
+
+            {/* Left: headline + CTAs */}
+            <div className="flex-1 min-w-0">
+              <div className="inline-flex items-center gap-2 text-xs font-medium text-brand-blue bg-blue-50 px-3 py-1 rounded-full mb-6">
+                <FileText className="h-3.5 w-3.5" aria-hidden="true" />
+                Independent Legal Information Publisher
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold text-navy-900 leading-tight mb-6">
+                Legal Claims Explained Clearly
+              </h1>
+              <p className="text-lg text-accent-slate leading-relaxed mb-8 max-w-2xl">
+                Plain-English guides to lawsuits, settlements, injury claims,
+                insurance disputes, consumer protection, and claim notices. We
+                explain your options — we are not a law firm and do not offer
+                legal advice.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/class-actions"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-blue text-white font-medium rounded-lg hover:bg-navy-800 transition-colors"
+                >
+                  Explore Claim Guides <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="/class-actions/what-is-a-class-action-lawsuit"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-border text-navy-900 font-medium rounded-lg hover:bg-surface transition-colors"
+                >
+                  Class Action Basics
+                </Link>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-navy-900 leading-tight mb-6">
-              Legal Claims Explained Clearly
-            </h1>
-            <p className="text-lg text-accent-slate leading-relaxed mb-8 max-w-2xl">
-              Plain-English guides to lawsuits, settlements, injury claims,
-              insurance disputes, consumer protection, and claim notices. We
-              explain your options — we are not a law firm and do not offer
-              legal advice.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/class-actions"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-blue text-white font-medium rounded-lg hover:bg-navy-800 transition-colors"
-              >
-                Explore Claim Guides <ArrowRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href="/class-actions/what-is-a-class-action-lawsuit"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-border text-navy-900 font-medium rounded-lg hover:bg-surface transition-colors"
-              >
-                Class Action Basics
-              </Link>
+
+            {/* Right: trust card */}
+            <div className="w-full lg:w-72 xl:w-80 shrink-0">
+              <div className="bg-surface border border-border rounded-xl p-6">
+                <p className="text-xs font-semibold text-accent-slate uppercase tracking-wider mb-4">
+                  Before You Submit a Claim
+                </p>
+                <ul className="space-y-3">
+                  {trustChecklist.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5">
+                      <CheckCircle
+                        className="h-4 w-4 text-brand-blue shrink-0 mt-0.5"
+                        aria-hidden="true"
+                      />
+                      <span className="text-sm text-navy-800 leading-snug">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-5 pt-4 border-t border-border">
+                  <p className="text-xs text-accent-slate leading-relaxed">
+                    LawsuitsClaim.com is an independent legal information
+                    publisher. We are not a law firm.
+                  </p>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -162,12 +222,18 @@ export default async function HomePage() {
         <section className="bg-white border-y border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
             <div className="flex items-end justify-between mb-8">
-              <h2 className="text-2xl font-bold text-navy-900">
-                Featured Guides
-              </h2>
+              <div>
+                <h2 className="text-2xl font-bold text-navy-900">
+                  Start Here: Essential Legal Claim Guides
+                </h2>
+                <p className="text-accent-slate text-sm mt-1">
+                  Foundational guides for understanding common legal claim
+                  situations.
+                </p>
+              </div>
               <Link
                 href="/class-actions"
-                className="text-sm text-brand-blue hover:text-navy-800 font-medium flex items-center gap-1"
+                className="shrink-0 text-sm text-brand-blue hover:text-navy-800 font-medium flex items-center gap-1 ml-4"
               >
                 All guides <ArrowRight className="h-3.5 w-3.5" />
               </Link>
@@ -181,6 +247,7 @@ export default async function HomePage() {
                   href={article.href}
                   category={article.categoryLabel}
                   readingTime={article.readingTime}
+                  updatedAt={article.updatedAt}
                 />
               ))}
             </div>
@@ -216,15 +283,48 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
+      {/* How We Create Our Guides */}
+      <section className="bg-white border-y border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-navy-900">
+              How We Create Our Guides
+            </h2>
+            <p className="text-accent-slate text-sm mt-1">
+              Our editorial standards are designed to keep information accurate,
+              honest, and genuinely useful.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {editorialCards.map(({ Icon, title, text }) => (
+              <div
+                key={title}
+                className="bg-surface border border-border rounded-xl p-5"
+              >
+                <div className="p-2 bg-blue-50 rounded-lg w-fit mb-4">
+                  <Icon className="h-5 w-5 text-brand-blue" aria-hidden="true" />
+                </div>
+                <h3 className="font-semibold text-navy-900 mb-2 text-sm leading-snug">
+                  {title}
+                </h3>
+                <p className="text-sm text-accent-slate leading-relaxed">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stay Informed */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <NewsletterSignup />
       </section>
 
       {/* Site Disclaimer */}
       <section className="bg-surface border-t border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <p className="text-xs text-accent-slate leading-relaxed max-w-4xl">
+          <p className="text-sm text-navy-800 leading-relaxed max-w-4xl">
             <strong>General Disclaimer:</strong> LawsuitsClaim.com is an
             independent legal information publisher. All content on this site is
             for general informational purposes only and does not constitute legal
