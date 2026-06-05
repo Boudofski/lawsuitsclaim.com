@@ -42,21 +42,28 @@ export interface Heading {
 export function extractHeadings(markdown: string): Heading[] {
   const headings: Heading[] = [];
 
+  let inFence = false;
   for (const line of markdown.split('\n')) {
+    if (line.startsWith('```') || line.startsWith('~~~')) {
+      inFence = !inFence;
+      continue;
+    }
+    if (inFence) continue;
     const h2 = line.match(/^## (.+)$/);
     const h3 = line.match(/^### (.+)$/);
     const match = h2 ?? h3;
     if (!match) continue;
 
     const text = match[1].trim();
+    const cleanText = text.replace(/[*_`~[\]]/g, '');
     // github-slugger compatible: lowercase, replace non-word chars with hyphen, trim hyphens
     const id = text
       .toLowerCase()
       .replace(/[^\w\s-]/g, '')
-      .replace(/[\s_]+/g, '-')
+      .replace(/\s+/g, '-')
       .replace(/^-+|-+$/g, '');
 
-    headings.push({ id, text, level: h2 ? 2 : 3 });
+    headings.push({ id, text: cleanText, level: h2 ? 2 : 3 });
   }
 
   return headings;
