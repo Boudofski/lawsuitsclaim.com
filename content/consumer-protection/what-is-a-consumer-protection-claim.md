@@ -31,11 +31,17 @@ Every state has consumer protection statutes, sometimes called UDAP (Unfair and 
 
 ## When You Might Have a Consumer Protection Claim
 
-A business misrepresented a product or service and you suffered harm. A company engaged in deceptive billing, hidden fees, or subscription traps. A debt collector used illegal tactics. A credit reporting agency published inaccurate information that harmed you.
+- A business misrepresented a product or service and you suffered harm.
+- A company engaged in deceptive billing, hidden fees, or subscription traps.
+- A debt collector used illegal tactics.
+- A credit reporting agency published inaccurate information that harmed you.
 
 ## How to Pursue a Consumer Protection Claim
 
-File a complaint with the FTC, CFPB, or your state attorney general. File a complaint with the Better Business Bureau. Consult a consumer protection attorney, many of whom take cases on contingency. Some violations allow you to sue in small claims court for smaller amounts.
+- File a complaint with the FTC, CFPB, or your state attorney general.
+- File a complaint with the Better Business Bureau.
+- Consult a consumer protection attorney, many of whom take cases on contingency.
+- Some violations allow you to sue in small claims court for smaller amounts.
 
 ---
 

@@ -17,7 +17,14 @@ Bad faith insurance refers to an insurer's unreasonable or dishonest conduct tow
 
 ## What Constitutes Bad Faith
 
-Common examples of potentially bad faith conduct include: denying a claim without a reasonable basis, failing to investigate a claim within a reasonable time, offering a settlement amount far below the claim's clear value, misrepresenting policy language to avoid payment, failing to communicate claim status to the policyholder, and refusing to defend a policyholder against a covered lawsuit.
+Common examples of potentially bad faith conduct include:
+
+- Denying a claim without a reasonable basis
+- Failing to investigate a claim within a reasonable time
+- Offering a settlement amount far below the claim's clear value
+- Misrepresenting policy language to avoid payment
+- Failing to communicate claim status to the policyholder
+- Refusing to defend a policyholder against a covered lawsuit
 
 ## First-Party vs. Third-Party Bad Faith
 

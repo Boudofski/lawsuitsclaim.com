@@ -19,13 +19,10 @@ A personal injury claim is a legal process in which an injured person seeks comp
 
 For a personal injury claim to have merit, generally four elements must exist:
 
-Duty: The other party had a legal duty of care to you — for example, a driver has a duty to follow traffic laws.
-
-Breach: The other party breached that duty by acting negligently or recklessly.
-
-Causation: The breach directly caused your injury.
-
-Damages: You suffered actual harm — physical injury, medical bills, lost wages, pain and suffering.
+- **Duty:** The other party had a legal duty of care to you — for example, a driver has a duty to follow traffic laws.
+- **Breach:** The other party breached that duty by acting negligently or recklessly.
+- **Causation:** The breach directly caused your injury.
+- **Damages:** You suffered actual harm — physical injury, medical bills, lost wages, pain and suffering.
 
 ## Common Types of Personal Injury Claims
 
@@ -33,11 +30,25 @@ Auto accidents are the most common type. Slip and fall accidents on someone else
 
 ## How the Process Typically Works
 
-The injured person seeks medical treatment and documents their injuries. They notify the responsible party's insurance company. The insurance company assigns an adjuster to investigate. The injured person or their attorney submits a demand letter with documentation. Negotiations occur. The claim settles, or if not, a lawsuit may be filed.
+- The injured person seeks medical treatment and documents their injuries.
+- They notify the responsible party's insurance company.
+- The insurance company assigns an adjuster to investigate.
+- The injured person or their attorney submits a demand letter with documentation.
+- Negotiations occur.
+- The claim settles, or if not, a lawsuit may be filed.
 
 ## What Compensation May Cover
 
-Compensation in a personal injury claim may include medical expenses, future medical costs, lost wages, loss of earning capacity, pain and suffering, and emotional distress. The exact categories depend on the facts of the case and the jurisdiction.
+Compensation in a personal injury claim may include:
+
+- Medical expenses
+- Future medical costs
+- Lost wages
+- Loss of earning capacity
+- Pain and suffering
+- Emotional distress
+
+The exact categories depend on the facts of the case and the jurisdiction.
 
 ## When to Contact a Lawyer
 

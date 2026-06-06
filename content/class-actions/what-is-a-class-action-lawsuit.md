@@ -37,21 +37,14 @@ For a lawsuit to become a class action, a judge must first "certify" it — a fo
 
 ## How a Class Action Typically Proceeds
 
-Step 1: An individual files a lawsuit on behalf of themselves and others "similarly situated."
-
-Step 2: Attorneys file a motion to certify the class.
-
-Step 3: The court decides whether to certify.
-
-Step 4: If certified, class members receive notice by mail or email.
-
-Step 5: The case proceeds toward settlement or trial.
-
-Step 6: If a settlement is reached, members receive notice of how to file a claim or opt out.
-
-Step 7: The court holds a "fairness hearing" to approve the settlement.
-
-Step 8: Payments are distributed after court approval.
+- Step 1: An individual files a lawsuit on behalf of themselves and others "similarly situated."
+- Step 2: Attorneys file a motion to certify the class.
+- Step 3: The court decides whether to certify.
+- Step 4: If certified, class members receive notice by mail or email.
+- Step 5: The case proceeds toward settlement or trial.
+- Step 6: If a settlement is reached, members receive notice of how to file a claim or opt out.
+- Step 7: The court holds a "fairness hearing" to approve the settlement.
+- Step 8: Payments are distributed after court approval.
 
 ## Example Scenario
 
@@ -77,16 +70,20 @@ If you believe you have significant individual damages beyond what the group set
 
 ## Frequently Asked Questions
 
-**Do I have to file anything to be in a class action?**
+### Do I have to file anything to be in a class action?
+
 Usually no. If you fit the class definition, you are automatically included. You may need to submit a claim form to receive a payment.
 
-**Can I sue independently if I am already in a class action?**
+### Can I sue independently if I am already in a class action?
+
 Yes, but you must opt out before the deadline stated in the notice.
 
-**How long does a class action take?**
+### How long does a class action take?
+
 Most take one to three years. Complex cases can take longer.
 
-**Do class action settlements pay a lot?**
+### Do class action settlements pay a lot?
+
 Individual payments vary widely. Many class members receive modest amounts. Larger payouts typically go to the lead plaintiff and attorneys.
 
 ---

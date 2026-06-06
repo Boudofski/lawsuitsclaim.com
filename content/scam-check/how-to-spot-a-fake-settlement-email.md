@@ -41,7 +41,10 @@ Grammatical errors, unusual formatting, generic salutations like "Dear Valued Cu
 
 ## What to Do With a Suspicious Email
 
-Do not click links in the email. Search for the case name independently in a search engine. Check PACER at pacer.gov for federal cases. Report the email to the FTC at reportfraud.ftc.gov.
+- Do not click links in the email.
+- Search for the case name independently in a search engine.
+- Check PACER at pacer.gov for federal cases.
+- Report the email to the FTC at reportfraud.ftc.gov.
 
 ## Sources to Verify
 

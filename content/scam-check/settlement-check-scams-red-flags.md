@@ -17,15 +17,29 @@ A fake settlement check is a fraudulent instrument used to steal money. Scammers
 
 ## How the Scam Works
 
-You receive an unexpected check for a settlement you did not file a claim for. The check looks official and may include a letter with a case number. The letter instructs you to keep a small amount as your payment and wire the rest to cover taxes, fees, or processing charges. You deposit the check. Your bank makes the funds temporarily available. You wire the money as instructed. Days later, the check bounces and the bank reverses the funds — leaving you responsible for the full amount you wired.
+- You receive an unexpected check for a settlement you did not file a claim for.
+- The check looks official and may include a letter with a case number.
+- The letter instructs you to keep a small amount as your payment and wire the rest to cover taxes, fees, or processing charges.
+- You deposit the check.
+- Your bank makes the funds temporarily available.
+- You wire the money as instructed.
+- Days later, the check bounces and the bank reverses the funds — leaving you responsible for the full amount you wired.
 
 ## Red Flags on a Settlement Check
 
-You did not submit a claim for this settlement. The check is for an unusually large amount with instructions to return most of it. The letter asks you to wire money, buy gift cards, or send cryptocurrency. The settlement name or case number does not appear in court records. The check lacks clear bank routing information or has blurry printing.
+- You did not submit a claim for this settlement.
+- The check is for an unusually large amount with instructions to return most of it.
+- The letter asks you to wire money, buy gift cards, or send cryptocurrency.
+- The settlement name or case number does not appear in court records.
+- The check lacks clear bank routing information or has blurry printing.
 
 ## What to Do With a Suspicious Check
 
-Do not cash or deposit it. Do not contact the sender using the number in the letter — that may be part of the scam. Research the settlement name independently. Contact your bank to report the fraudulent instrument. Report it to the FTC at reportfraud.ftc.gov and to your state attorney general.
+- Do not cash or deposit it.
+- Do not contact the sender using the number in the letter — that may be part of the scam.
+- Research the settlement name independently.
+- Contact your bank to report the fraudulent instrument.
+- Report it to the FTC at reportfraud.ftc.gov and to your state attorney general.
 
 ## If You Already Cashed It
 

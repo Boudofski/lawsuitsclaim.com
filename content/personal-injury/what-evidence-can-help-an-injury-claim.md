@@ -41,7 +41,9 @@ Keep a daily log of your symptoms, pain levels, how the injury affects your dail
 
 ## Common Mistakes
 
-Waiting to seek medical treatment creates a gap that insurers use to argue your injuries were not caused by the accident. Deleting social media posts or photos that might contradict your injury claims is considered spoliation and can damage your case. Giving a recorded statement to the opposing insurance company without an attorney can result in statements being used against you.
+- Waiting to seek medical treatment creates a gap that insurers use to argue your injuries were not caused by the accident.
+- Deleting social media posts or photos that might contradict your injury claims is considered spoliation and can damage your case.
+- Giving a recorded statement to the opposing insurance company without an attorney can result in statements being used against you.
 
 ---
 

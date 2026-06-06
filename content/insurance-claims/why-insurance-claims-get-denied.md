@@ -41,7 +41,10 @@ If the insurer finds that you provided inaccurate information when applying for 
 
 ## What to Do After a Denial
 
-Request the denial in writing with the specific reason. Review your policy against the stated reason. File an internal appeal if you believe the denial is incorrect. If the appeal fails, consider filing a complaint with your state insurance commissioner or consulting an attorney.
+- Request the denial in writing with the specific reason.
+- Review your policy against the stated reason.
+- File an internal appeal if you believe the denial is incorrect.
+- If the appeal fails, consider filing a complaint with your state insurance commissioner or consulting an attorney.
 
 ---
 
