@@ -60,7 +60,7 @@ export function extractHeadings(markdown: string): Heading[] {
     const id = text
       .toLowerCase()
       .replace(/[^\w\s-]/g, '')
-      .replace(/\s+/g, '-')
+      .replace(/ /g, '-')
       .replace(/^-+|-+$/g, '');
 
     headings.push({ id, text: cleanText, level: h2 ? 2 : 3 });

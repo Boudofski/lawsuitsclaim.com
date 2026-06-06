@@ -18,7 +18,6 @@ import type { Metadata } from "next";
 import type { LucideIcon } from "lucide-react";
 import ArticleCard from "./_components/ArticleCard";
 import CategoryCard from "./_components/CategoryCard";
-import NewsletterSignup from "./_components/NewsletterSignup";
 import SchemaOrg from "./_components/SchemaOrg";
 import { getFeaturedArticles } from "@/lib/articles";
 
@@ -316,10 +315,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Stay Informed */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <NewsletterSignup />
-      </section>
+      {/* Stay Informed — replaced by LearnMoreSection in Task 13 */}
 
       {/* Site Disclaimer */}
       <section className="bg-surface border-t border-border">
