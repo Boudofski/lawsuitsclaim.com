@@ -82,3 +82,13 @@ export function getFeaturedArticles(limit = 6): Article[] {
   const featured = all.filter((a) => a.featured);
   return featured.length >= limit ? featured.slice(0, limit) : all.slice(0, limit);
 }
+
+export function getRelatedArticles(
+  category: string,
+  excludeSlug: string,
+  limit = 3
+): Article[] {
+  return getArticlesByCategory(category)
+    .filter((a) => a.slug !== excludeSlug)
+    .slice(0, limit);
+}
