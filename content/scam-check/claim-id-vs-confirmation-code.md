@@ -19,7 +19,7 @@ A Claim ID or Notice ID is a unique identifier included in your settlement notic
 
 Settlement administrators assign each potential class member a unique identifier, often called a Claim ID, Notice ID, or Control Number. This number is printed on your notice and is used to pre-populate the claim form, link your submission to the administrator's records, and verify your eligibility quickly.
 
-You typically need this number to file a claim on the settlement portal. It does not mean you are guaranteed a payment — it means you have been identified as a potential class member.
+You typically need this number to file a claim on the settlement portal. Receiving a Claim ID does not mean you will receive a payment — it means you have been identified as a potential class member.
 
 ## What Is a Confirmation Code?
 
@@ -27,7 +27,7 @@ After you successfully submit a claim, the settlement portal issues a confirmati
 
 ## Can You File Without a Claim ID?
 
-Some settlements allow you to file without a pre-assigned ID if you believe you are eligible but did not receive a notice. The claim form usually has an option for this. You may need to provide additional documentation to prove eligibility.
+Some settlements allow you to file without a pre-assigned ID if you believe you may be eligible but did not receive a notice. The claim form usually has an option for this. You may need to provide additional documentation to support your claim.
 
 ## Should You Share These Numbers?
 
