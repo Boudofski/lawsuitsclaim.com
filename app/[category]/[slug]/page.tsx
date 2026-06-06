@@ -1,11 +1,13 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getAllArticles, getArticle } from "@/lib/articles";
+import { getAllArticles, getArticle, getRelatedArticles } from "@/lib/articles";
 import { getCategoryBySlug } from "@/lib/categories";
 import { renderMarkdownToHtml, extractHeadings } from "@/lib/markdown";
 import ArticleDisclaimer from "@/app/_components/ArticleDisclaimer";
 import Breadcrumbs from "@/app/_components/Breadcrumbs";
 import SchemaOrg from "@/app/_components/SchemaOrg";
+import TableOfContents from "@/app/_components/TableOfContents";
+import RelatedGuides from "@/app/_components/RelatedGuides";
 
 export async function generateStaticParams() {
   return getAllArticles().map((a) => ({
@@ -44,6 +46,7 @@ export default async function ArticlePage(
   const cat = getCategoryBySlug(category);
   const html = await renderMarkdownToHtml(article.content);
   const headings = extractHeadings(article.content);
+  const related = getRelatedArticles(category, slug, 3);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -123,7 +126,7 @@ export default async function ArticlePage(
           <ArticleDisclaimer />
         </div>
 
-        {/* Two-column: article + TOC placeholder (wired in Task 14) */}
+        {/* Two-column: article body + sticky TOC sidebar */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 mt-8">
           <div className="flex-1 min-w-0">
             <div
@@ -132,15 +135,22 @@ export default async function ArticlePage(
             />
           </div>
 
-          {/* TOC sidebar placeholder — wired in Task 14 */}
           {headings.length >= 2 && (
-            <aside className="hidden lg:block lg:w-64 xl:w-72 shrink-0" aria-label="Table of contents" />
+            <aside className="hidden lg:block lg:w-64 xl:w-72 shrink-0">
+              <TableOfContents headings={headings} />
+            </aside>
           )}
         </div>
 
-        {/* Bottom */}
-        <div className="max-w-4xl mt-12 pt-8 border-t border-border">
-          <ArticleDisclaimer />
+        {/* Related guides + bottom disclaimer */}
+        <div className="max-w-4xl mt-12">
+          <RelatedGuides
+            articles={related}
+            currentCategory={cat?.label ?? category}
+          />
+          <div className="pt-8 border-t border-border">
+            <ArticleDisclaimer />
+          </div>
         </div>
       </div>
     </>
