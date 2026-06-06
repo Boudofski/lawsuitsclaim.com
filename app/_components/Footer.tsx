@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([section, links]) => (
             <div key={section}>
-              <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">
+              <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-4">
                 {section}
               </h3>
               <ul className="space-y-2.5">
@@ -78,7 +78,7 @@ export default function Footer() {
             jurisdiction. If you have a legal matter, consult a licensed attorney in your
             jurisdiction.
           </p>
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-slate-400">
             © {new Date().getFullYear()} LawsuitsClaim. All rights reserved.
           </p>
         </div>
