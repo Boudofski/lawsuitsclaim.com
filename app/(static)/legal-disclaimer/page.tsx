@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { AlertTriangle } from "lucide-react";
+import Breadcrumbs from "@/app/_components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Legal Disclaimer",
@@ -10,6 +12,30 @@ export const metadata: Metadata = {
 export default function LegalDisclaimerPage() {
   return (
     <article>
+      {/* Breadcrumbs */}
+      <div className="not-prose mb-6">
+        <Breadcrumbs items={[{ label: "Legal Disclaimer" }]} />
+      </div>
+
+      {/* Prominent callout */}
+      <div className="not-prose bg-amber-bg border border-amber-border rounded-xl p-5 mb-8 flex items-start gap-4">
+        <AlertTriangle
+          className="h-6 w-6 text-amber-accent shrink-0 mt-0.5"
+          aria-hidden="true"
+        />
+        <div>
+          <p className="font-bold text-navy-900 text-base leading-snug">
+            For general information only — not legal advice.
+          </p>
+          <p className="text-sm text-navy-800 mt-1 leading-relaxed">
+            Nothing on LawsuitsClaim.com constitutes legal advice, legal
+            representation, or an attorney-client relationship. If you have a
+            legal matter, please consult a licensed attorney in your
+            jurisdiction.
+          </p>
+        </div>
+      </div>
+
       <h1>Legal Disclaimer</h1>
       <p>
         <em>Last updated: June 2026</em>

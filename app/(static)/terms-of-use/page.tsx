@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AlertTriangle } from "lucide-react";
+import Breadcrumbs from "@/app/_components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -11,6 +13,35 @@ export const metadata: Metadata = {
 export default function TermsOfUsePage() {
   return (
     <article>
+      {/* Breadcrumbs */}
+      <div className="not-prose mb-6">
+        <Breadcrumbs items={[{ label: "Terms of Use" }]} />
+      </div>
+
+      {/* Intro callout */}
+      <div className="not-prose bg-amber-bg border border-amber-border rounded-xl p-5 mb-8 flex items-start gap-4">
+        <AlertTriangle
+          className="h-6 w-6 text-amber-accent shrink-0 mt-0.5"
+          aria-hidden="true"
+        />
+        <div>
+          <p className="font-bold text-navy-900 text-base leading-snug">
+            Informational use only.
+          </p>
+          <p className="text-sm text-navy-800 mt-1 leading-relaxed">
+            All content on LawsuitsClaim.com is for general informational
+            purposes only and does not constitute legal advice. See our full{" "}
+            <Link
+              href="/legal-disclaimer"
+              className="text-brand-blue hover:underline font-medium"
+            >
+              Legal Disclaimer
+            </Link>
+            .
+          </p>
+        </div>
+      </div>
+
       <h1>Terms of Use</h1>
       <p>
         <em>Last updated: June 2026</em>
