@@ -4,7 +4,7 @@
 > [Manual Pre-Submission Checklist](#7-manual-pre-submission-checklist) has
 > been verified by a human as well.
 
-Last verified: 2026-06-07  
+Last verified: 2026-06-07 (Task 18 final QA pass)  
 Publisher ID: `pub-1553579698682940`
 
 ---
@@ -92,12 +92,16 @@ Publisher ID: `pub-1553579698682940`
 ## 6. Build & Technical Quality
 
 - [x] **Production build passes** — `pnpm build` completed successfully:
-  `Compiled successfully in 2.1s`, all 64 static pages generated without
-  errors.
+  `Compiled successfully in 2.9s`, all 64 static pages generated without
+  errors (verified Task 18 final QA pass, 2026-06-07).
 - [x] **ESLint passes with zero errors** — `pnpm lint` exits with code 0 and
-  produces no error or warning output.
+  produces no error or warning output (verified Task 18).
 - [x] **TypeScript is clean** — Build succeeded with no type errors (Next.js
-  runs `tsc` as part of the build pipeline).
+  runs `tsc` as part of the build pipeline; verified Task 18).
+- [x] **Page count confirmed at 64** — Breakdown: 1 homepage, 5 category pages,
+  45 article pages, 7 static pages (`/about`, `/contact`, `/cookie-policy`,
+  `/editorial-policy`, `/legal-disclaimer`, `/privacy-policy`, `/terms-of-use`),
+  plus `/_not-found`, `/robots.txt`, `/sitemap.xml`, `/opengraph-image`.
 
 ---
 
