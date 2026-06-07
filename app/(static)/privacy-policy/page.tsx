@@ -86,7 +86,7 @@ export default function PrivacyPolicyPage() {
         </a>{" "}
         or{" "}
         <a
-          href="http://optout.aboutads.info/"
+          href="https://optout.aboutads.info/"
           target="_blank"
           rel="noopener noreferrer"
         >

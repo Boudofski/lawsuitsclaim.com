@@ -95,7 +95,7 @@ export default function CookiePolicyPage() {
         . For more information about third-party cookies and opt-out options,
         visit the{" "}
         <a
-          href="http://optout.aboutads.info/"
+          href="https://optout.aboutads.info/"
           target="_blank"
           rel="noopener noreferrer"
         >
